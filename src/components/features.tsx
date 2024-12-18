@@ -2,6 +2,7 @@
 import AnalyticsIcon from "../icons/analytics";
 import CalendarIcon from "../icons/calendar";
 import CaretUpIcon from "../icons/caret-up";
+import ClickIcon from "../icons/click";
 import CpuIcon from "../icons/cpu";
 import DrawIcon from "../icons/draw";
 import MailIcon from "../icons/mail";
@@ -213,7 +214,7 @@ export function Features() {
           </div>
 
           {/** Real-time section */}
-          <div className="w-full h-full border border-border/80 rounded-2xl bg-accent/5 backdrop-blur p-7 flex flex-col gap-2 relative overflow-hidden">
+          <div className="w-full h-full border border-border/80 rounded-2xl bg-accent/5 backdrop-blur p-7 pb-0 flex flex-col gap-2 relative overflow-hidden">
             <div className="h-36 w-64 absolute bottom-0 right-10 bg-primary rounded-full blur-3xl opacity-25 z-0"></div>
             <div className="absolute top-0 left-0 w-full h-full z-0 inset-0 textureBg opacity-10"></div>
 
@@ -223,7 +224,56 @@ export function Features() {
               matter where you are
             </div>
             <div className="w-full h-full flex items-end justify-between gap-5 relative mt-4 opacity-80">
-              <Globe className="absolute -right-10 -top-10" />
+              <div className="w-full h-full bg-black border rounded-t-2xl flex flex-col gap-2 p-3 overflow-hidden">
+                <div className="flex items-center gap-1 p-0.5 px-3 max-w-max border rounded-full bg-gradient-to-l from-accent/40 to-black">
+                  <div className="w-5 h-5 rounded-full bg-primary border-2 border-black flex items-center justify-center text-sm">
+                    j
+                  </div>
+                  <div className="w-5 h-5 rounded-full bg-emerald-500 border-2 border-black -ml-3 flex items-center justify-center text-sm">
+                    k
+                  </div>
+                  <div className="text-xs ml-2">online now</div>
+                </div>
+                <div className="w-full p-2 border-b-1 border-dashed text-xs flex items-center justify-center">
+                  <div className="min-w-max">
+                    <p>landing page ui</p>
+                    <p className="text-body">should be completed in 2 days</p>
+                  </div>
+                  <div className="flex items-center justify-end w-full">
+                    <div className="w-5 h-5 rounded-full bg-emerald-500 border-2 border-black flex items-center justify-center text-sm">
+                      k
+                    </div>
+                    <div className="w-5 h-5 rounded-full bg-pink-500 border-2 border-black -ml-2 flex items-center justify-center text-sm">
+                      d
+                    </div>
+                    <div className="p-1 px-3 ml-2 bg-accent/40 rounded-xl text-xs relative">
+                      finish
+                      <div className="absolute -bottom-6 left-4 flex flex-col items-center justify-center rotate-[-30deg]">
+                        <ClickIcon className="text-primary" />
+                        <div
+                          className="bg-primary pt-0.5 px-1.5 rounded-t-full"
+                          style={{
+                            boxShadow: "0px 0px 5px 0px hsl(var(--primary))",
+                          }}
+                        >
+                          jakie
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute bottom-5 left-5 flex flex-col items-center justify-center rotate-[30deg]">
+                    <ClickIcon className="text-emerald-500" />
+                    <div
+                      className="bg-emerald-500 pt-0.5 px-1.5 rounded-t-full"
+                      style={{
+                        boxShadow: "0px 0px 5px 0px #10b981",
+                      }}
+                    >
+                      kais
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
